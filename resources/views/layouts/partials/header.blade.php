@@ -49,12 +49,11 @@
                             <a href="{{ action([\App\Http\Controllers\PurchaseController::class, 'create']) }}"
                                class="tw-flex tw-items-center tw-gap-2 tw-px-3 tw-py-2 tw-text-sm tw-font-medium tw-text-gray-600 tw-transition-all tw-duration-200 tw-rounded-lg hover:tw-text-gray-900 hover:tw-bg-gray-100"
                                role="menuitem" tabindex="-1">
-                                <svg aria-hidden="true" class="tw-size-5 tw-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <svg aria-hidden="true" class="tw-size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M12 3v12"></path>
-                                    <path d="M16 11l-4 4l-4 -4"></path>
-                                    <path d="M3 12a9 9 0 0 0 18 0"></path>
+                                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                                    <path d="M9 12h6"></path>
+                                    <path d="M12 9v6"></path>
                                 </svg>
                                 @lang('purchase.purchase')
                             </a>
@@ -62,12 +61,11 @@
                             <a href="{{ action([\App\Http\Controllers\SellController::class, 'create']) }}" id="create_sale"
                                class="tw-flex tw-items-center tw-gap-2 tw-px-3 tw-py-2 tw-text-sm tw-font-medium tw-text-gray-600 tw-transition-all tw-duration-200 tw-rounded-lg hover:tw-text-gray-900 hover:tw-bg-gray-100"
                                role="menuitem" tabindex="-1">
-                                <svg aria-hidden="true" class="tw-size-5 tw-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <svg aria-hidden="true" class="tw-size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M12 15v-12"></path>
-                                    <path d="M16 7l-4 -4l-4 4"></path>
-                                    <path d="M3 12a9 9 0 0 0 18 0"></path>
+                                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                                    <path d="M9 12h6"></path>
+                                    <path d="M12 9v6"></path>
                                 </svg>
                                 @lang('sale.sale')
                             </a>
@@ -76,7 +74,12 @@
                                     <a href="{{ action([\App\Http\Controllers\SellPosController::class, 'create']). '?sub_type=repair'}}" id="create_sale"
                                        class="tw-flex tw-items-center tw-gap-2 tw-px-3 tw-py-2 tw-text-sm tw-font-medium tw-text-gray-600 tw-transition-all tw-duration-200 tw-rounded-lg hover:tw-text-gray-900 hover:tw-bg-gray-100"
                                        role="menuitem" tabindex="-1">
-                                        <i class="fa fa-wrench fa-lg"></i>
+                                        <svg aria-hidden="true" class="tw-size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                                            <path d="M9 12h6"></path>
+                                            <path d="M12 9v6"></path>
+                                        </svg>
                                         @lang('repair::lang.repair')
                                     </a>
                                 @endcan
