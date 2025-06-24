@@ -14,6 +14,7 @@ return [
     'sale' => 'Sell',
     'sells' => 'Sales',
     'list_sale' => 'List Sales',
+    'sale_order' => 'Sale Order',
     'add_sale' => 'Add Sale',
     'pos_sale' => 'POS',
     'draft_added' => 'Draft added successfully',

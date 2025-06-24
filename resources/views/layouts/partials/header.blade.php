@@ -55,7 +55,7 @@
                                     <path d="M9 12h6"></path>
                                     <path d="M12 9v6"></path>
                                 </svg>
-                                @lang('purchase.purchase')
+                                @lang('purchase.purchase_order')
                             </a>
 
                             <a href="{{ action([\App\Http\Controllers\SellController::class, 'create']) }}" id="create_sale"
@@ -67,11 +67,11 @@
                                     <path d="M9 12h6"></path>
                                     <path d="M12 9v6"></path>
                                 </svg>
-                                @lang('sale.sale')
+                                @lang('sale.sale_order')
                             </a>
                             @if($__is_repair_enabled)
                                 @can("repair.create")
-                                    <a href="{{ action([\App\Http\Controllers\SellPosController::class, 'create']). '?sub_type=repair'}}" id="create_sale"
+                                    <a href="{{ action([\Modules\Repair\Http\Controllers\JobSheetController::class, 'create']) }}" id="create_sale"
                                        class="tw-flex tw-items-center tw-gap-2 tw-px-3 tw-py-2 tw-text-sm tw-font-medium tw-text-gray-600 tw-transition-all tw-duration-200 tw-rounded-lg hover:tw-text-gray-900 hover:tw-bg-gray-100"
                                        role="menuitem" tabindex="-1">
                                         <svg aria-hidden="true" class="tw-size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -80,7 +80,7 @@
                                             <path d="M9 12h6"></path>
                                             <path d="M12 9v6"></path>
                                         </svg>
-                                        @lang('repair::lang.repair')
+                                        @lang('repair::lang.job_sheet_add')
                                     </a>
                                 @endcan
                             @endif

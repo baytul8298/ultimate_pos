@@ -104,6 +104,7 @@ return [
     'job_sheets' => 'Job Sheets',
     'all_job_sheets' => 'All job sheets',
     'add_job_sheet' => 'Add job sheet',
+    'job_sheet_add' => 'Job Sheet Add',
     'job_sheet' => 'Job sheet',
     'create' => 'Create',
     'service_type' => 'Service type',
